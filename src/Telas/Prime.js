@@ -6,11 +6,11 @@ export default function Prime() {
     return (
         <>
             <View style={estilos.topo}>
-                <Text style={estilos.titleTop}>Detalhes do sistema</Text>
+                <Text style={estilos.titleTop}>Detalhes do livro</Text>
             </View>
 
             <View style={estilos.listaDescricao}>
-                <Text style={estilos.nomeLista}>LIVRO: HARRY POTTER</Text>
+                <Text style={estilos.nomeLista}>LIVRO: FELIZES PARA SEMPRE</Text>
             </View>
 
             <View>
