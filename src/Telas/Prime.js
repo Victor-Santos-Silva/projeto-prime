@@ -6,16 +6,16 @@ export default function Prime() {
     return (
         <>
             <View style={estilos.topo}>
-                <Text style={estilos.titleTop}>Detalhes do livro</Text>
+                <Text style={estilos.titleTop}>Detalhes do Livro</Text>
             </View>
 
             <View style={estilos.listaDescricao}>
-                <Text style={estilos.nomeLista}>LIVRO: FELIZES PARA SEMPRE</Text>
+                <Text style={estilos.nomeLista}>LIVRO: Harry Potter</Text>
             </View>
 
             <View>
                 <Text style={estilos.descricao}>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Harry, por um lado, é um bruxo, sabe criar poções mágicas, voar em vassouras e consegue até ficar invisível. Por outro, é um menino normal. Um pouco tímido, companheiro, tem medos, expectativas e às vezes fica furioso. E tem preocupações parecidas com as das crianças comuns, como a nota de uma prova difícil.
                 </Text>
 
                 <Text style={estilos.preco}>
@@ -30,15 +30,16 @@ const estilos = StyleSheet.create({
     topo: {
         width: "100%",
         height: 150,
-        backgroundColor: "#3e1fdd"
+        backgroundColor: "#008fb0"
     },
     titleTop: {
+        color: "white",
         width: "100%",
         textAlign: "center",
-        paddingTop: 70,
+        paddingTop: 80,
         fontSize: 20,
-        color: "white",
-        fontWeight: "bold"
+        borderRadius: 10,
+        fontWeight: "bold",
     },
     listaDescricao: {
         paddingTop: 20,
@@ -48,26 +49,29 @@ const estilos = StyleSheet.create({
         marginRight: 20,
     },
     nomeLista: {
+        backgroundColor: "#1ba2c3",
+        color: "white",
         textAlign: "center",
         fontSize: 30,
         fontWeight: "bold",
-        color: "#3e1fdd",
-        backgroundColor: "#febcff",
+        borderRadius: 10,
         padding: 10
     },
     descricao: {
-        backgroundColor: "#febcff",
-        color: "#3e1fdd",
+        backgroundColor: "#1ba2c3",
+        color: "white",
         padding: 20,
         marginLeft: 20,
         marginRight: 20,
         fontSize: 16,
         lineHeight: 26,
         textAlign: "justify",
-        fontWeight: "bold"
+        fontWeight: "bold",
+        borderRadius: 10,
     },
     preco: {
-        color: "#febcff",
+        backgroundColor: "#1ba2c3",
+        color: "white",
         fontWeight: "bold",
         fontSize: 26,
         marginTop: 8,
@@ -75,6 +79,6 @@ const estilos = StyleSheet.create({
         marginRight: 20,
         textAlign: "center",
         padding: 10,
-        backgroundColor: "#3e1fdd",
+        borderRadius: 10,
     }
-})
+});
